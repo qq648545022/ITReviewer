@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ITReview</string>
+    <string name="title_activity_problem_list">ProblemList</string>
+</resources>
