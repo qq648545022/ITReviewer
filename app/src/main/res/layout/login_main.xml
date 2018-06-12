@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/login_background">
+
+    <TextView
+        android:id="@+id/APPname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ITREVIEWER"
+        android:textColor="@drawable/white"
+        android:textSize="100px" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/black"
+        android:textColorHint="@drawable/white"
+        android:hint="用户名："
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:hint="密    码："
+        android:textColor="@drawable/black"
+        android:textColorHint="@drawable/white"
+        android:inputType="textPassword"
+        />
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <Button
+           android:id="@+id/sign_up"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="注册" />
+
+       <Button
+           android:id="@+id/sign_in"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="登录" />
+   </LinearLayout>
+
+
+
+
+</LinearLayout>
