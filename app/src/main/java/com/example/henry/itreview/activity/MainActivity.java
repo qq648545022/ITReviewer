@@ -2,8 +2,10 @@ package com.example.henry.itreview.activity;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
@@ -20,13 +22,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     private BottomNavigationBar bottomNavigationBar;
     private ArrayList<Fragment> fragments;
     private ViewPager viewPager;
+    private static final String MAIN_LOG_TAG = "MAIN";
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initViewPager();
         initBottomBar();
-
+        Log.v(MAIN_LOG_TAG, "onCreate调用");
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null) {
+            actionBar.hide();
+        }
     }
 
     private void initBottomBar() {
