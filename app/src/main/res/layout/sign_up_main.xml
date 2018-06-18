@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/login_background">
+
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用"
+        android:textColor="@drawable/white"
+        android:textSize="100px" />
+    <TextView
+        android:id="@+id/signup_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ITREVIEWER"
+        android:textColor="@drawable/white"
+        android:textSize="100px" />
+
+    <EditText
+        android:id="@+id/signup_username"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/black"
+        android:textColorHint="@drawable/white"
+        android:hint="用 户 名   ："
+        />
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:hint="密         码："
+        android:textColor="@drawable/black"
+        android:textColorHint="@drawable/white"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/signup_password2"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:hint="确认密码："
+        android:textColor="@drawable/black"
+        android:textColorHint="@drawable/white"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:hint="年         龄："
+        android:textColor="@drawable/black"
+        android:textColorHint="@drawable/white"
+        android:inputType="textPassword"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="性别:"
+            android:height="50px"
+            android:textColor="@drawable/white"
+            android:textSize="40px"/>
+        <RadioGroup
+            android:id="@+id/sex"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:id="@+id/man"
+                android:text="男"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:id="@+id/man"
+                android:text="女" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
