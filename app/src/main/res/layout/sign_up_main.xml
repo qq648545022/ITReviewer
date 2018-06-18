@@ -77,12 +77,14 @@
             <RadioButton
                 android:layout_height="wrap_content"
                 android:id="@+id/man"
-                android:text="男"
-                android:checked="true"/>
+       android:text="男"
+                android:checked="true"
+                android:layout_width="wrap_content"/>
             <RadioButton
                 android:layout_height="wrap_content"
-                android:id="@+id/man"
-                android:text="女" />
+                android:id="@+id/woman"
+                android:text="女"
+                android:layout_width="wrap_content"/>
         </RadioGroup>
 
     </LinearLayout>
@@ -97,11 +99,14 @@
             android:layout_height="wrap_content"
             android:text="注册" />
 
+
+        <!--
         <Button
             android:id="@+id/sign_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="登录" />
+            -->
 
     </LinearLayout>
 

@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProblemList extends AppCompatActivity{
-    private String[] data = {"Android", "Java",  "C/C++", "Pythom"};
+    private String[] data = {"Android", "Java",  "C/C++", "Python"};
     private List<Problems> problems = new ArrayList<>();
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
