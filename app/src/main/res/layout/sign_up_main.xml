@@ -77,7 +77,7 @@
             <RadioButton
                 android:layout_height="wrap_content"
                 android:id="@+id/man"
-       android:text="男"
+                android:text="男"
                 android:checked="true"
                 android:layout_width="wrap_content"/>
             <RadioButton
