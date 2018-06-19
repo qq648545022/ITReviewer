@@ -1,4 +1,4 @@
-package com.example.henry.itreview.activity;
+package com.example.henry.itreview.myclass;
 
 /**
  * Created by asus on 2018/6/19.
