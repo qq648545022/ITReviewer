@@ -5,6 +5,7 @@ package com.example.henry.itreview.myclass;
  */
 
 public class Problem {
+    private String type;
     private String question;
     private String a;
     private String b;

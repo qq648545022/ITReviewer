@@ -25,13 +25,15 @@ public class ProblemList extends AppCompatActivity{
         setContentView(R.layout.activity_problem_list);
         initList();
         ProblemListAdapter adapter = new ProblemListAdapter(ProblemList.this, R.layout.problems_item, problems);
-        ListView listView = (ListView) findViewById(R.id.list_view);
+        final ListView listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
                 Problems problem = problems.get(position);
+                String type = data[position];
                 Intent intent = new Intent(getBaseContext(), SolveProblem.class);
+                intent.putExtra("type", type);
                 startActivity(intent);
             }
         });
