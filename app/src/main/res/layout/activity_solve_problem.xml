@@ -6,74 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.henry.itreview.activity.SolveProblem">
-    <TextView
-        android:id="@+id/problem"
-        android:layout_height="140dp"
-        android:layout_width="match_parent"
-        android:layout_margin="5dp"
-        android:textSize="20sp"
-        android:textColor="@drawable/black"
-        android:text="dasdas"/>
-
-    <RadioGroup
-        android:id="@+id/rg"
-        android:layout_width="match_parent"
-        android:layout_height="360dp">
-        <RadioButton
-            android:id="@+id/rba"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="dsadsdsd"
-            android:textColor="@drawable/black"
-            android:textSize="20sp"/>
-
-        <RadioButton
-            android:id="@+id/rbb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="dsadsdsd"
-            android:textColor="@drawable/black"
-            android:textSize="20sp"/>
-        <RadioButton
-            android:id="@+id/rbc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="dsadsdsd"
-            android:textColor="@drawable/black"
-            android:textSize="20sp"/>
-        <RadioButton
-            android:id="@+id/rbd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="dsadsdsd"
-            android:textColor="@drawable/black"
-            android:textSize="20sp"/>
-    </RadioGroup>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/last_problem"
-            android:layout_marginLeft="30dp"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/blue"
-            android:textColor="@drawable/black"
-            android:textSize="20sp"/>
-        <Button
-            android:id="@+id/next_problem"
-            android:layout_marginLeft="145dp"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/blue"
-            android:textColor="@drawable/black"
-            android:text="下一题"
-            android:textSize="20sp"/>
-    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/solve_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>
