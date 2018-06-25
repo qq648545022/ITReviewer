@@ -4,11 +4,12 @@ package com.example.henry.itreview.myclass;
  * Created by asus on 2018/6/19.
  */
 import java.sql.*;
-public class SQLCon {
+class SQLCon {
     private Connection con;
     public void getConnection(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
+
         }catch (ClassNotFoundException e){
             e.printStackTrace();
         }
@@ -19,8 +20,5 @@ public class SQLCon {
             e.printStackTrace();
         }
     }
-    public static void main(String[] args){
-        SQLCon c = new SQLCon();
-        c.getConnection();
-    }
+
 }

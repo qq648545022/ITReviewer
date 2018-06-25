@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ITReview</string>
     <string name="title_activity_problem_list">ProblemList</string>
+    <string name="tip">用户名和密码只有由数字和字母组成且长度小于12</string>
 </resources>
