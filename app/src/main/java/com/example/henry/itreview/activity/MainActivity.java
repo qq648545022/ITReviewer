@@ -1,5 +1,6 @@
 package com.example.henry.itreview.activity;
 
+import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -23,6 +24,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     private ArrayList<Fragment> fragments;
     private ViewPager viewPager;
     private static final String MAIN_LOG_TAG = "MAIN";
+    private SharedPreferences pref;
+    private SharedPreferences.Editor editor;
+    public static boolean loginOrnot = false;
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +34,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         initViewPager();
         initBottomBar();
         Log.v(MAIN_LOG_TAG, "onCreate调用");
-        ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null) {
-            actionBar.hide();
-        }
+//        ActionBar actionBar = getSupportActionBar();
+//        if(actionBar != null) {
+//            actionBar.hide();
+//        }
     }
 
     private void initBottomBar() {
